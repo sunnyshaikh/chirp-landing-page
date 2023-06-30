@@ -156,8 +156,13 @@ section.hero {
 }
 
 .hero__avatars {
-  --to-left: -1.15rem;
+  position: relative;
+  --to-left: 1.15rem;
   margin-top: 1rem;
+}
+
+.img__avatar {
+  position: absolute;
 }
 
 .img__avatar:nth-child(2) {
