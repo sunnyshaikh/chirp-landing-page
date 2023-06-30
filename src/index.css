@@ -55,11 +55,14 @@ img {
   max-width: 100%;
 }
 
-.btn {
+button {
   background: none;
   border: 0;
   outline: 0;
   cursor: pointer;
+}
+
+.btn {
   font-family: var(--body-font);
   color: var(--secondary);
   font-weight: 600;
@@ -88,6 +91,7 @@ img {
 
 /* navbar */
 .navbar {
+  position: relative;
   width: 100%;
   padding: 1rem 0;
   display: flex;
@@ -107,10 +111,15 @@ img {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  transition: .5s ease;
 }
 
 .navbar__list {
   color: var(--light);
+}
+
+.navbar__toggle_menu {
+  display: none;
 }
 
 /* hero css */
@@ -207,6 +216,28 @@ section.hero {
 @media screen and (max-width: 500px) {
   html {
     font-size: 16px;
+  }
+
+  .navbar__menu {
+    /* display: none; */
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    max-height: 0;
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    overflow: hidden;
+  }
+
+  .navbar__menu.active {
+    max-height: 300px;
+    padding: 2rem 1rem;
+  }
+
+  .navbar__toggle_menu {
+    display: inline-block;
   }
 
   .hero__title {
