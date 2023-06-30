@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
           <div className="hero__bg_area">
             <picture>
-              <source media="(max-width: 768px)" srcSet={HeroBg2} />
+              <source media="(max-width: 920px)" srcSet={HeroBg2} />
               <img src={HeroBg} alt="hero image" />
             </picture>
           </div>
