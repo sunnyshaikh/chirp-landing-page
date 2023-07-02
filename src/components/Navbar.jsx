@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <a href="./" role="img" className="navbar__logo logo">Chirp.</a>
+      <a href="./" aria-label="logo" className="navbar__logo logo">Chirp.</a>
       <ul className={`${toggle ? "navbar__menu active" : "navbar__menu"}`}>
         <li className="navbar__item">
           <a href="#" className="navbar__list">Home</a>
@@ -18,7 +18,9 @@ const Navbar = () => {
         <li className="navbar__item">
           <a href="#" className="navbar__list">FAQ</a>
         </li>
-        <Button text="Sign in with Twitter" />
+        <li className="navbar__item">
+          <Button text="Sign in with Twitter" />
+        </li>
       </ul>
       <button className="navbar__toggle_menu" onClick={() => setToggle(!toggle)}>
         <img src={Ham} alt="toggle" />

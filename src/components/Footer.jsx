@@ -6,10 +6,10 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer__main">
-          <a href="./" role="image" className="logo">Chirp.</a>
+          <a href="./" aria-label="logo" className="logo">Chirp.</a>
           <ul className="footer__menu">
             <li>
-              <a href="./" role="image" className="footer__list">
+              <a href="./" aria-label="twitter-logo" className="footer__list">
                 <img src={TwitterBlack} alt="twitter" />
               </a>
             </li>

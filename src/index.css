@@ -2,13 +2,13 @@
 
 /* variables */
 :root {
-  --primary: #42a5f5;
+  --primary: #3a9ced;
   --secondary: #0777af;
   --light-blue: #d7f5f5;
   --dark: #111;
   --white: #fff;
   --light-bg: #f8f8f8;
-  --light: #7e7e7e;
+  --light: #696969;
 
   --body-font: 'Noto Sans', sans-serif;
   --heading-font: 'Open Sans', sans-serif;
