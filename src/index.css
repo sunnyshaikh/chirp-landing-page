@@ -4,7 +4,7 @@
 :root {
   --primary: #42a5f5;
   --secondary: #0777af;
-  --light-blue: #cce9f4;
+  --light-blue: #d7f5f5;
   --dark: #111;
   --white: #fff;
   --light-bg: #f8f8f8;
@@ -80,6 +80,11 @@ button {
   background-color: var(--primary);
   color: var(--white);
   border-radius: 5px;
+  transition: .25s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary);
 }
 
 .container {
@@ -120,6 +125,11 @@ section {
 
 .navbar__list {
   color: var(--light);
+  transition: .25s ease;
+}
+
+.navbar__list:hover {
+  color: var(--dark);
 }
 
 .navbar__toggle_menu {
@@ -318,6 +328,14 @@ hr {
 
 .footer__menu li {
   align-self: center;
+}
+
+.footer__list {
+  transition: .25s ease;
+}
+
+.footer__list:hover {
+  color: var(--secondary);
 }
 
 /* responsive */
