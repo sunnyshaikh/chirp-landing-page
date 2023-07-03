@@ -3,7 +3,7 @@
 /* variables */
 :root {
   --primary: #3a9ced;
-  --secondary: #0777af;
+  --secondary: #14548c;
   --light-blue: #d7f5f5;
   --dark: #111;
   --white: #fff;
@@ -304,6 +304,10 @@ section.hero {
 }
 
 /* pricing css */
+.pricing {
+  padding-top: 1rem;
+}
+
 .pricing h2,
 .pricing p {
   text-align: center;
