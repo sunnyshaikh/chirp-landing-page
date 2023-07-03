@@ -1,3 +1,4 @@
+import Customers from "./components/Customers"
 import Features from "./components/Features"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
@@ -8,6 +9,7 @@ function App() {
     <main>
       <Hero />
       <Features />
+      <Customers />
       <Pricing />
       <Footer />
     </main>

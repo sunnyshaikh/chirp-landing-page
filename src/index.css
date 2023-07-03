@@ -40,6 +40,7 @@ a {
 
 p {
   color: var(--light);
+  line-height: 1.65;
 }
 
 strong {
@@ -232,7 +233,7 @@ section.hero {
   gap: 2rem;
 }
 
-.card {
+.feature__card {
   border: 1px solid #cccccc;
   padding: 1.5rem;
   border-radius: 4px;
@@ -247,6 +248,59 @@ section.hero {
 
 .card h3 {
   font-size: 1.1rem;
+}
+
+/* customers css */
+.customers {
+  padding-top: 1rem;
+  background-color: var(--light-blue);
+}
+
+.customers__card {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.customer__card {
+  flex: 1;
+  min-width: 300px;
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.customer__profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem
+}
+
+.customer__profile .avatar img {
+  width: 60px;
+  height: 60px;
+}
+
+.customer__profile a {
+  margin-left: auto;
+}
+
+.customer__card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  gap: .5rem
 }
 
 /* pricing css */
